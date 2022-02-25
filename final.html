@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<head>
+<style>
+
+
+h3 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #4CAF50;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #4CAF50;
+}
+
+p {
+  text-indent: 50px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+a {
+  text-decoration: none;
+  color: #008CBA;
+}
+
+body {
+	background: #fefbd8;
+	font-family: 'Trebuchet MS', sans-serif;
+}
+
+</style>
+</head>	
+
+
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 10px 140px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 105px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 20px 90px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+<body>
+
+<ul>
+  <li><a href="index.html">Introduction</a></li>
+  <li><a href="About.html">About Me</a></li>
+  <li class="dropdown">
+     <a href="javascript:void(0)" class="dropbtn">Documents</a>
+        <div class="dropdown-content">
+      <a href="software.html">Softwares</a>
+      <a href="Safety.html">Safety in the FabLab</a>
+      <a href="web.html">Wed Development</a>
+      <a href="CAD.html">Computer Aided Design</a>
+      <a href="IO.html">Input & Output Devices</a>
+      <a href="3D.html">3D Printing</a>
+      <a href="cutting.html">Computer Controlled Cutting</a>
+      <a href="EP.html">Embedded Programming</a>
+    </div>
+</li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Projects</a>
+    <div class="dropdown-content">
+      <a href="knight.html">Knight Chess Piece</a>
+      <a href="music.html">Music Box</a>
+      <a href="final.html">Final Project</a>
+    </div>
+  </li>
+</ul>
+
+
+<style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
+
+<h1> NEOPIXEL MOOD LAMP </h1>
+
+<img src="complete.jpg" width="450" height="400" class="center">
+
+<h3>Planning </h3>
+
+<p>For this module’s final project, I decided to make a mood lamp, using NeoPixel strips as the output device and a touch sensor as the input device. During the planning stage, I intended to add a PIR motion sensor as well as an I2C LCD to the lamp for added functionality. However, when testing the code for the embedded system, the 2 devices did not work as intended and were scrapped from the final design. 
+<br>
+Here is the <a target="_blank" href="video.html">video</a> of the designing, assembling, and testing process, along with the <a target="_blank" href="slide.html">slide</a> describing the functionality and circuit design.</p>
+
+
+<h3> Fabrication </h3>
+<p>When designing the casing for the lamp, I decided to go with a design similar to the music box but with a more intricate vector design. Here is what the final design looked like after creating the 3D model on Fusion360. The dimensions of the casing are 150mm x 100mm x 100mm.</p>
+
+<style>
+
+iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+</style>
+
+
+
+
+<iframe src="https://ichat2481.autodesk360.com/shares/public/SH35dfcQT936092f0e43004625952c0bf3bf?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+
+
+<p>The sketches of each of the faces were then saved as DXF files and imported over to Inkscape so that the vector design can be incorporated to the casing sketches. Here is what the final vector design looks like.</p>
+
+<img src="fvector.jpg" width="400" height="400">
+
+<p>The design was then saved as an SVG before being imported to CorelDRAW to add the graphics for engraving and make any final edits before laser cutting. After laser cutting was complete, using 3mm plywood, these were the pieces obtained. The power was set to 70%  for cutting and 20% for engraving, while the speed was set at 30% and 80% respectively. It is to be noted that the top right piece was recut without the rectangular hole in the centre due to the IC2 LCD being scrapped.</p>
+
+<img src="cut.jpg" width="600" height="400">
+
+<p>The 3D printed component of the lamp is the mount for the various components. Due to the PIR motion sensor and I2C LCD being scrapped, there are 2 sections of the mount that were not utilised, but the mount was still able to serve as a base for the NeoPixel strips and effectively hide the Arduino Uno board, breadboard and wiring. Below is the finalised 3D model designed on Fusion360, the sliced model on CURA, and the end product after 3D printing. The dimensions of the mount were 145mm x 95mm x 37mm and the total print time was 2.5 hours.</p>
+
+<iframe src="https://ichat2481.autodesk360.com/shares/public/SH35dfcQT936092f0e4388ffa727429d06d1?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+
+<br>
+
+<img src="flip.jpg" width="600" height="400">
+<br>
+
+<img src="mount.jpg" width="800" height="400">
+<br>
+
+<p>Here are the settings used for 3D printing the mount:</p>
+
+<br>
+<img src="ugh.jpg" width="300" height="450">
+<br>
+
+<h3>Circuit Design</h3>
+
+<p>This circuit was designed using Tinkercad and served as a reference for creating the actual circuit design. However, a touch sensor device was not available Tinkercad, so a push button was used as a replacement instead.</p>
+
+<img src="circuit.jpg" width="600" height="400">
+
+<p>Below is the finalised circuit design.</p>
+
+<img src="arrangement.jpg" width="600" height="400">
+
+<h3>Assembly and Testing</h3>
+
+<p>First, I added baking paper to the inner side of the pieces with the holes, so that the inside of the lamp won’t be able to be seen from the outside. Next, I unscrewed the Arduino Uno from it’s base so that I could properly orientate it to face the USB port to the back of the lamp. The Arduino board and breadboard were glued to the base of the lamp. Then, the wiring, touch sensor and neo pixel lamp were incorporated into the circuit and covered with the mount, and two sides of the lamp were glued into place.</p>
+
+<img src="collage.jpg" width="600" height="400">
+
+<br>
+<p>Then, I moved onto testing the new code to see whether the lamp was functioning properly.</p>
+<br>
+
+<p>Click <a target="_blank" href="code.html">here</a> to see the code used.</p>
+
+<p>Here is what the product looked like during the testing stage. The LED colour was set to purple (red=200, green=0, blue=255) and they were set to light up for 3 cycles before needing an input signal from the touch sensor to restart the cycles. </p>
+
+<style>
+
+video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+</style>
+
+<video width="1024" height="768" controls class="center">
+  <source src="testing.mp4" type="video/mp4">
+    </video>
+
+
+<h3>Final Adjustments</h3>
+<p>Here is what the final product looks like after the last two sides were glued into place and covered with the lid. Some changes were made towards the end to improve the functionality of the design. The microcontroller was hot glued into place so that it would not move around when the USB cable is being attached, and the touch sensor was moved to the exterior of the lamp and glued into place for easier access.</p>
+
+<video width="1024" height="768" controls class="center">
+  <source src="final.mp4" type="video/mp4">
+    </video>
+
+<h3> Further Improvements </h3>
+
+<style>
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 4px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+<style>
+
+table {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+</style>
+
+<table>
+  <tr>
+    <td>I/O Devices</td>
+    <td>The devices on their own could function properly. However, the code could not work to make the motion sensor change the colors of the LEDs, and could only turn them on. The LCD also had issues displaying text, even after the hex address was found. This led to both the devices being scrapped. In hindsight, the devices should have been tested together before planning the lamp design, and not individually.</td>
+  </tr>
+  <tr>
+    <td>3D Printed Mount</td>
+    <td>The mount ended up being slightly too large, causing the lamp casing to not fit together properly. This is because the 3mm thickness of the casing was not taken into account. The correct size of the casing should have been 142mm for the length and 92mm for the width.</td>
+  </tr>
+  <tr>
+    <td>Lamp Lid</td>
+    <td>A detachable lid should have been used instead of one that flips open. This would have made it easier to access and adjust the components inside of the lamp.</td>
+  </tr>
+  <tr>
+    <td>NeoPixel Strip</td>
+    <td>The NeoPixel strips should have been laid out closer to the edge of the mount for maximum light intensity.</td>
+  </tr>
+  <tr>
+    <td>Tocuh Sensor</td>
+    <td>The touch sensor could have been mounted in a way that it wasn’t too far into the box and also held in place properly. The hole should have been cut larger for easier access to the center of the sensor.</td>
+  </tr>
+  <tr>
+    <td>Arduino Board</td>
+    <td>The hole used for the microcontroller could have been larger so that it would be easier to insert the USB cable, or the microcontroller could have been mounted in a way that the port was nicely fit into the hole at the back of the lamp. For a nicer fit, a hole the same size as the port could be used instead.
+</td>
+  </tr>
+  <tr>
+    <td>Code</td>
+    <td>The code I made had an issue which did not allow the touch sensor to change the color of the lights. I should have added different states in the code, which coded for a different color in each state. For example, state 1,2 & 3 could be different colors and state 0 would have all the lights off. Each time the touch sensor is activated, it will cause the state to increase by +1 and will go back to state 0 if state > 3. A ColorWipe() function could also be added to make the LEDs light up one at a time across the strip for a nicer looking effect.
+
+</td>
+  </tr>
+
+
+</table>
+
+
+</body>
+</html>

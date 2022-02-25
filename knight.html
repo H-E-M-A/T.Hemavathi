@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<head>
+<style>
+
+
+h3 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #4CAF50;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #4CAF50;
+}
+
+p {
+  text-indent: 50px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+a {
+  text-decoration: none;
+  color: #008CBA;
+}
+
+body {
+  background: #fefbd8;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+</style>
+</head> 
+
+
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 10px 140px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 105px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 20px 90px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+<body>
+
+<ul>
+  <li><a href="index.html">Introduction</a></li>
+  <li><a href="About.html">About Me</a></li>
+  <li class="dropdown">
+     <a href="javascript:void(0)" class="dropbtn">Documents</a>
+        <div class="dropdown-content">
+      <a href="software.html">Softwares</a>
+      <a href="Safety.html">Safety in the FabLab</a>
+      <a href="web.html">Wed Development</a>
+      <a href="CAD.html">Computer Aided Design</a>
+      <a href="IO.html">Input & Output Devices</a>
+      <a href="3D.html">3D Printing</a>
+      <a href="cutting.html">Computer Controlled Cutting</a>
+      <a href="EP.html">Embedded Programming</a>
+    </div>
+</li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Projects</a>
+    <div class="dropdown-content">
+      <a href="knight.html">Knight Chess Piece</a>
+      <a href="music.html">Music Box</a>
+      <a href="final.html">Final Project</a>
+    </div>
+  </li>
+</ul>
+
+
+<style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
+
+<h1 style="text-align:center;">3D PRINTED KNIGHT CHESS PIECE</h1>
+<p> We were tasked with creating a knight chess piece using a 3D printer. The process included designing a 3D prototype using Fusion 360 by Autodesk, then using CURA to slice the STL file so it will be ready for printing, followed by exporting the file and finally 3D printing it using the Ultimaker 2+ in the workshop. 
+  <br>
+In order to create the base of the chess piece, I first used the “create” function to draw half of the base as a 2D sketch, and then completed the entire base using the 'revolve’ function, resulting in a circular and hollow 3D base. The upper part of the chess piece, consisting of the knight’s head, was formed using a transparent canvas. This was the canvas used and the 2D sketch that I made.
+<br>
+<br>
+<img src="sketch.jpg" width="900" height="600">
+
+<br>
+<br>
+I first followed the outlines and sketched out a simplified 2D design. I then proceeded to extrude the 2D sketch to form a 3D head for the chess piece. I then joined the two parts together to form a complete knight chess piece. After that, I went ahead and did some minor editing using the “fillet” function to smoothen the edges so that the chess piece would look better aesthetically.
+<br>
+<br>
+<img src="base and head.jpg" width="900" height="600">
+<br>
+Above are pictures of the base formed using the "revolve" fucntion and the extruded sketch of the knight's head. 
+<br>
+<p>And this is the completed 3D model on Fusion 360.
+</p>
+
+
+<style>
+
+iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+</style>
+
+<iframe src="https://ichat2481.autodesk360.com/shares/public/SH35dfcQT936092f0e433bf25bb99063c2ae?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+<br>
+<br>
+<p>
+After the model was complete, I exported it to CURA, which is a slicing application for 3D printers. Here is how it looked it on the application before and after slicing.</p>
+<br>
+<br>
+<img src="before2.jpg" width="700" height="500">
+<br>
+<img src="after.jpg" width="300" height="300">
+<br>
+<p>These are the settings that were used for the completed model:</p>
+<br>
+<style>
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 4px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+
+<style>
+
+table {
+  display: block;
+  margin-left: 620px;
+  margin-right: auto;
+}
+
+</style>
+
+
+<table>
+  <tr>
+    <td>Printer</td>
+    <td>Ulrimaker 2+</td>
+  </tr>
+  <tr>
+    <td>Material Used</td>
+    <td>PLA</td>
+  </tr>
+   <tr>
+    <td>Nozzle Size</td>
+    <td>0.4mm</td>
+  </tr>
+   <tr>
+    <td>Extrude</td>
+    <td>0.2mm</td>
+  </tr>
+   <tr>
+    <td>Layer Height</td>
+    <td>0.25mm</td>
+  </tr>
+   <tr>
+    <td>Wall Thickness</td>
+    <td>0.8mm</td>
+  </tr>
+   <tr>
+    <td>Infill Density</td>
+    <td>10%</td>
+  </tr>
+   <tr>
+    <td>Infill Pattern</td>
+    <td>Grid</td>
+  </tr>
+   <tr>
+    <td>Infill Layer Thickness</td>
+    <td>0.2mm</td>
+  </tr>
+  <tr>
+    <td>Generate Supports</td>
+    <td>Enabled</td>
+  </tr>
+  <tr>
+    <td>Support Overhang Angle</td>
+    <td>50 degrees</td>
+  </tr>
+  <tr>
+    <td>Build Plate Adhesion</td>
+    <td>Brim</td>
+  </tr>
+</table>
+
+<p>The time taken to print was 45 minutes. It was measured to be approximately 3.2cm in height (including base) and 1cm in width (knight head). The base was measured to have a diameter of 3.4cm. <p>
+<br>
+<p>This is the finished 3D printed knight chess piece! 😊<p>
+<br>
+<img src="printed.jpg" width="350" height="300">
+<br>
+</body>
+</html>
+
